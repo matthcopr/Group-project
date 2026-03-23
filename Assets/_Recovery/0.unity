@@ -868,6 +868,9 @@ MonoBehaviour:
   slideDownSpeedMultiplier: 4
   slidingColliderHeight: 1
   colliderLerpSpeed: 10
+  clamberHeight: 0
+  clamberReach: 0
+  clamberSpeed: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
