@@ -1,6 +1,5 @@
 using UnityEngine;
 
-//this class is an example of the adapter pattern as it is used to make sure that the camera remains attatched to the player, despite being a seperate object
 public class PlayerCam : MonoBehaviour
 {
     public float sensX;

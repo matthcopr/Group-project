@@ -849,9 +849,9 @@ MonoBehaviour:
   wallJumpMultiplier: 0.4
   airMultiplier: 0.05
   maxWallSlideSpeed: 4
-  turnSpeed: 1
+  turnSpeed: 1.5
   maxJumps: 2
-  speedDeceleration: 0
+  speedDeceleration: 5
   coyoteTimer: 0.2
   jumpBufferTime: 0.2
   jumpKey: 32
@@ -865,11 +865,11 @@ MonoBehaviour:
   slideDrag: 0.1
   slideMultiplier: 0.05
   slopeUpBrakingMultiplier: 0
-  slideDownSpeedMultiplier: 4
+  slideDownSpeedMultiplier: 2
   dashes: 3
-  dashForce: 10
-  dashCooldown: 1
-  dashDuration: 0.5
+  dashForce: 8
+  dashCooldown: 4.5
+  dashDuration: 0.3
   orientation: {fileID: 1101056270}
 --- !u!1 &832575517
 GameObject:
