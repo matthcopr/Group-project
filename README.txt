@@ -5,7 +5,7 @@ Which is shown in MoveCamera in Start and HandleSlideStart and HandleSlideStop b
 
 You can find the code by going to assets/scripts and assets/tests for the test code.
 
-In oreder to test the game if you don't have unity editor go to the build folder and run the .exe / application called
+In order to test the game if you don't have unity editor go to the build folder and run the .exe / application called
 Group-project. I am unsure if this will work on non Windows OS so proceed with that in mind.
 
 In the game there are features of sliding on left ctrl, moving with wasd, jump and walljump with spacebar, and dashing with
