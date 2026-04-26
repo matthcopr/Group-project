@@ -5,8 +5,8 @@ Which is shown in MoveCamera in Start and HandleSlideStart and HandleSlideStop b
 
 You can find the code by going to assets/scripts and assets/tests for the test code.
 
-In oreder to test the game if you don't have unity editor go to the game folder and run the .exe / application called
-whatever. I am unsure if this will work on non Windows OS so proceed with that in mind.
+In order to test the game if you don't have unity editor go to the game folder and run the .exe / application called
+whatever.exe (this is for windows). We believe that this game should also work on Mac. For Mac, in the top folder run the program group_project_mac.app. If you just open the finder application, and click on this program, the window should pop open and run.
 
 In the game there are features of sliding on left ctrl, moving with wasd, jump and walljump with spacebar, and dashing with
 shift. Along with coyote time and jump buffer being enabled for all of these techniques.
