@@ -1,9 +1,8 @@
-using Codice.CM.Common.Matcher;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, IMovementMediator
 {
 
     // public modifiable constants
@@ -57,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
     private PlayerMovementContext ctx;
     private IMovementState currentState;
+    private IMovementState pendingState;
     private CoyoteTimeHandler coyoteTime;
     private IJumpStrategy groundJump;
     private IJumpStrategy wallJump;
@@ -120,8 +120,11 @@ public class PlayerMovement : MonoBehaviour
         HandleDashCooldown();
         currentState.Update(ctx);
 
-        IMovementState next = currentState.GetNextState(ctx);
-        if (next != currentState) TransitionTo(next);
+        if (pendingState != null)
+        {
+            TransitionTo(pendingState);
+            pendingState = null;
+        }
 
         if (ctx.dashQueued)
         {
@@ -131,7 +134,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    //ran once every 1/60th a second, used to update state which determines all movement behaviors such as jumping and dashing
+    // ran once every 1/60th a second, I think, used to update state which determines all movement behaviors such as jumping and dashing
     private void FixedUpdate()
     {
         currentState.FixedUpdate(ctx);
@@ -139,6 +142,7 @@ public class PlayerMovement : MonoBehaviour
         ctx.wallJumpQueued = false;
     }
 
+    public void RequestTransition(IMovementState next) { pendingState = next; }
 
     private void TransitionTo(IMovementState next)
     {
@@ -146,7 +150,7 @@ public class PlayerMovement : MonoBehaviour
         bool wasSliding = currentState is SlidingState;
         currentState?.Exit(ctx);
         currentState = next;
-        currentState.Enter(ctx);
+        currentState.Enter(ctx, this);
         bool isSliding = currentState is SlidingState;
 
         if (!wasSliding && isSliding) OnSlideStart?.Invoke();

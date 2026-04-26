@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "generatedon": "2026-04-26T01:57:46Z",
+    "parser": "MultiReportParser (2x OpenCoverParser)",
+    "assemblies": 2,
+    "classes": 26,
+    "files": 26,
+    "coveredlines": 434,
+    "uncoveredlines": 252,
+    "coverablelines": 686,
+    "totallines": 1434,
+    "linecoverage": 63.2,
+    "coveredbranches": 0,
+    "totalbranches": 0,
+    "coveredmethods": 96,
+    "totalmethods": 147,
+    "methodcoverage": 65.3
+ },
+  "coverage": {
+    "assemblies": [
+      { "name": "GameAssembly", "classes": 17, "coverage": 33.5, "coveredlines": 127, "coverablelines": 379, "totallines": 797, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 38.5, "coveredmethods": 32, "totalmethods": 83, "classesinassembly": [
+        { "name": "AirborneMovementStrategy", "coverage": 15.7, "coveredlines": 3, "coverablelines": 19, "totallines": 38, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 25, "coveredmethods": 1, "totalmethods": 4 },
+        { "name": "AirborneState", "coverage": 52.6, "coveredlines": 10, "coverablelines": 19, "totallines": 36, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 66.6, "coveredmethods": 4, "totalmethods": 6 },
+        { "name": "CoyoteTimeHandler", "coverage": 0, "coveredlines": 0, "coverablelines": 14, "totallines": 27, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 8 },
+        { "name": "DashCommand", "coverage": 100, "coveredlines": 9, "coverablelines": 9, "totallines": 19, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 5, "totalmethods": 5 },
+        { "name": "DashingMovementStrategy", "coverage": 33.3, "coveredlines": 1, "coverablelines": 3, "totallines": 9, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 33.3, "coveredmethods": 1, "totalmethods": 3 },
+        { "name": "DashingState", "coverage": 96.6, "coveredlines": 29, "coverablelines": 30, "totallines": 55, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 5, "totalmethods": 5 },
+        { "name": "GroundedMovementStrategy", "coverage": 100, "coveredlines": 18, "coverablelines": 18, "totallines": 31, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
+        { "name": "GroundedState", "coverage": 50, "coveredlines": 15, "coverablelines": 30, "totallines": 48, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 66.6, "coveredmethods": 4, "totalmethods": 6 },
+        { "name": "GroundJumpStrategy", "coverage": 0, "coveredlines": 0, "coverablelines": 10, "totallines": 19, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
+        { "name": "JumpCommand", "coverage": 95.6, "coveredlines": 22, "coverablelines": 23, "totallines": 40, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 66.6, "coveredmethods": 4, "totalmethods": 6 },
+        { "name": "MoveCamera", "coverage": 0, "coveredlines": 0, "coverablelines": 18, "totallines": 38, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 6 },
+        { "name": "PlayerCam", "coverage": 0, "coveredlines": 0, "coverablelines": 13, "totallines": 31, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
+        { "name": "PlayerMovement", "coverage": 0, "coveredlines": 0, "coverablelines": 105, "totallines": 244, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 13 },
+        { "name": "PlayerMovementContext", "coverage": 80, "coveredlines": 4, "coverablelines": 5, "totallines": 50, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
+        { "name": "SlidingMovementStrategy", "coverage": 15.7, "coveredlines": 3, "coverablelines": 19, "totallines": 35, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 25, "coveredmethods": 1, "totalmethods": 4 },
+        { "name": "SlidingState", "coverage": 43.3, "coveredlines": 13, "coverablelines": 30, "totallines": 50, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 50, "coveredmethods": 3, "totalmethods": 6 },
+        { "name": "WallJumpStrategy", "coverage": 0, "coveredlines": 0, "coverablelines": 14, "totallines": 27, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 } ] },
+      { "name": "Tests", "classes": 9, "coverage": 100, "coveredlines": 307, "coverablelines": 307, "totallines": 637, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 64, "totalmethods": 64, "classesinassembly": [
+        { "name": "AirborneStateTests", "coverage": 100, "coveredlines": 29, "coverablelines": 29, "totallines": 67, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 6, "totalmethods": 6 },
+        { "name": "DashCommandTests", "coverage": 100, "coveredlines": 36, "coverablelines": 36, "totallines": 79, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 9, "totalmethods": 9 },
+        { "name": "DashingStateTests", "coverage": 100, "coveredlines": 49, "coverablelines": 49, "totallines": 96, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 9, "totalmethods": 9 },
+        { "name": "GroundedMovementStrategyTests", "coverage": 100, "coveredlines": 33, "coverablelines": 33, "totallines": 72, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 7, "totalmethods": 7 },
+        { "name": "GroundedStateTests", "coverage": 100, "coveredlines": 46, "coverablelines": 46, "totallines": 93, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 9, "totalmethods": 9 },
+        { "name": "JumpCommandTests", "coverage": 100, "coveredlines": 68, "coverablelines": 68, "totallines": 125, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 13, "totalmethods": 13 },
+        { "name": "MockJumpStrategy", "coverage": 100, "coveredlines": 4, "coverablelines": 4, "totallines": 11, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
+        { "name": "MockMediator", "coverage": 100, "coveredlines": 4, "coverablelines": 4, "totallines": 14, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
+        { "name": "SlidingStateTests", "coverage": 100, "coveredlines": 38, "coverablelines": 38, "totallines": 80, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 7, "totalmethods": 7 } ] } ]
+  }
+}

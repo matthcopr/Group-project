@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageReport scope="Summary">
+  <Summary>
+    <Generatedon>4/25/2026 - 7:57:46 PM</Generatedon>
+    <Parser>MultiReportParser (2x OpenCoverParser)</Parser>
+    <Assemblies>2</Assemblies>
+    <Classes>26</Classes>
+    <Files>26</Files>
+    <Coveredlines>434</Coveredlines>
+    <Uncoveredlines>252</Uncoveredlines>
+    <Coverablelines>686</Coverablelines>
+    <Totallines>1434</Totallines>
+    <Linecoverage>63.2</Linecoverage>
+    <Coveredbranches>0</Coveredbranches>
+    <Totalbranches>0</Totalbranches>
+    <Coveredmethods>96</Coveredmethods>
+    <Totalmethods>147</Totalmethods>
+    <Methodcoverage>65.3</Methodcoverage>
+  </Summary>
+  <Coverage>
+    <Assembly name="GameAssembly" classes="17" coverage="33.5" coveredlines="127" coverablelines="379" totallines="797" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="32" totalmethods="83" methodcoverage="38.5">
+      <Class name="AirborneMovementStrategy" coverage="15.7" coveredlines="3" coverablelines="19" totallines="38" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="4" methodcoverage="25" />
+      <Class name="AirborneState" coverage="52.6" coveredlines="10" coverablelines="19" totallines="36" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="6" methodcoverage="66.6" />
+      <Class name="CoyoteTimeHandler" coverage="0" coveredlines="0" coverablelines="14" totallines="27" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="8" methodcoverage="0" />
+      <Class name="DashCommand" coverage="100" coveredlines="9" coverablelines="9" totallines="19" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="5" methodcoverage="100" />
+      <Class name="DashingMovementStrategy" coverage="33.3" coveredlines="1" coverablelines="3" totallines="9" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="3" methodcoverage="33.3" />
+      <Class name="DashingState" coverage="96.6" coveredlines="29" coverablelines="30" totallines="55" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="5" methodcoverage="100" />
+      <Class name="GroundedMovementStrategy" coverage="100" coveredlines="18" coverablelines="18" totallines="31" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
+      <Class name="GroundedState" coverage="50" coveredlines="15" coverablelines="30" totallines="48" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="6" methodcoverage="66.6" />
+      <Class name="GroundJumpStrategy" coverage="0" coveredlines="0" coverablelines="10" totallines="19" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
+      <Class name="JumpCommand" coverage="95.6" coveredlines="22" coverablelines="23" totallines="40" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="6" methodcoverage="66.6" />
+      <Class name="MoveCamera" coverage="0" coveredlines="0" coverablelines="18" totallines="38" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="6" methodcoverage="0" />
+      <Class name="PlayerCam" coverage="0" coveredlines="0" coverablelines="13" totallines="31" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
+      <Class name="PlayerMovement" coverage="0" coveredlines="0" coverablelines="105" totallines="244" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="13" methodcoverage="0" />
+      <Class name="PlayerMovementContext" coverage="80" coveredlines="4" coverablelines="5" totallines="50" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
+      <Class name="SlidingMovementStrategy" coverage="15.7" coveredlines="3" coverablelines="19" totallines="35" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="4" methodcoverage="25" />
+      <Class name="SlidingState" coverage="43.3" coveredlines="13" coverablelines="30" totallines="50" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="6" methodcoverage="50" />
+      <Class name="WallJumpStrategy" coverage="0" coveredlines="0" coverablelines="14" totallines="27" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
+    </Assembly>
+    <Assembly name="Tests" classes="9" coverage="100" coveredlines="307" coverablelines="307" totallines="637" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="64" totalmethods="64" methodcoverage="100">
+      <Class name="AirborneStateTests" coverage="100" coveredlines="29" coverablelines="29" totallines="67" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
+      <Class name="DashCommandTests" coverage="100" coveredlines="36" coverablelines="36" totallines="79" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="9" totalmethods="9" methodcoverage="100" />
+      <Class name="DashingStateTests" coverage="100" coveredlines="49" coverablelines="49" totallines="96" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="9" totalmethods="9" methodcoverage="100" />
+      <Class name="GroundedMovementStrategyTests" coverage="100" coveredlines="33" coverablelines="33" totallines="72" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="7" totalmethods="7" methodcoverage="100" />
+      <Class name="GroundedStateTests" coverage="100" coveredlines="46" coverablelines="46" totallines="93" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="9" totalmethods="9" methodcoverage="100" />
+      <Class name="JumpCommandTests" coverage="100" coveredlines="68" coverablelines="68" totallines="125" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="13" totalmethods="13" methodcoverage="100" />
+      <Class name="MockJumpStrategy" coverage="100" coveredlines="4" coverablelines="4" totallines="11" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
+      <Class name="MockMediator" coverage="100" coveredlines="4" coverablelines="4" totallines="14" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
+      <Class name="SlidingStateTests" coverage="100" coveredlines="38" coverablelines="38" totallines="80" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="7" totalmethods="7" methodcoverage="100" />
+    </Assembly>
+  </Coverage>
+</CoverageReport>

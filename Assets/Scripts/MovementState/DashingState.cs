@@ -3,11 +3,14 @@ using UnityEngine;
 public class DashingState : IMovementState
 {
     private readonly IMovementStrategy movement = new DashingMovementStrategy();
+    private IMovementMediator mediator;
     private float timer;
     private bool wasUsingGravity;
 
-    public void Enter(PlayerMovementContext ctx)
+    public void Enter(PlayerMovementContext ctx, IMovementMediator mediator)
     {
+        this.mediator = mediator;
+
         timer = 0f;
         Rigidbody rb = ctx.rb;
         // store whether or not was using gravity before and restores it to its original state on exit
@@ -20,13 +23,9 @@ public class DashingState : IMovementState
         // picks direction based on movement keys, otherwise dash in the diretion the player is facing
         Vector3 dashDir;
         if (ctx.moveDir.magnitude > 0)
-        {
             dashDir = ctx.moveDir.normalized;
-        }
         else
-        {
             dashDir = ctx.orientation.forward;
-        }
         //dash along slope rather than directly horizontal
         if (ctx.grounded)
             dashDir = Vector3.ProjectOnPlane(dashDir, ctx.GetSlopeNormal()).normalized;
@@ -40,23 +39,17 @@ public class DashingState : IMovementState
         ctx.isDashing = false;
     }
 
-    public void Update(PlayerMovementContext ctx) => timer += Time.deltaTime;
-    public void FixedUpdate(PlayerMovementContext ctx) { }
-
-    // once dash is over change state
-    public IMovementState GetNextState(PlayerMovementContext ctx)
+    public void Update(PlayerMovementContext ctx)
     {
+        timer += Time.deltaTime;
         if (timer >= ctx.dashDuration)
         {
             if (ctx.grounded)
-            {
-                return new GroundedState();
-            }
+                mediator.RequestTransition(new GroundedState());
             else
-            {
-                return new AirborneState();
-            }
+                mediator.RequestTransition(new AirborneState());
         }
-        return this;
     }
+    public void FixedUpdate(PlayerMovementContext ctx) { }
+
 }
